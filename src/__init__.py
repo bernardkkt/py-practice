@@ -1,2 +1,2 @@
-import decorator as pradec
-import monkeypatch as pramon
+from . import decorator as pradec
+from . import monkeypatch as pramon
