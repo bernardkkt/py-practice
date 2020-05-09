@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-from pra import pradec
+from pradec import pradec
+from pramon import pramon
 
 
 def test_1():
