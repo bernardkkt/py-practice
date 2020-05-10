@@ -17,3 +17,11 @@ def test_2():
     target.encoded = val
     target.decoded = target.decode()
     assert target.decoded == b'hello world'
+
+
+def test_3():
+    val = b'hello world'
+    target = pradec.Hashes().Base64()
+    target.decoded = val
+    target.computeHash = pramon.createHash
+    assert target.computeHash() == '5eb63bbbe01eeed093cb22bb8f5acdc3'
