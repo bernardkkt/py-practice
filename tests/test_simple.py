@@ -23,5 +23,5 @@ def test_3():
     val = b'hello world'
     target = pradec.Hashes().Base64()
     target.decoded = val
-    target.computeHash = pramon.createHash
+    target.computeHash = pramon.createHash.__get__(target)
     assert target.computeHash() == '5eb63bbbe01eeed093cb22bb8f5acdc3'
